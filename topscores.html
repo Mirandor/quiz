@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css"/>
+
+    <!-- Icon Kit -->
+    <script src="https://kit.fontawesome.com/8a7e0c6166.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Quiz Title -->
+    <title>High Scores | Riddle Me This</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar bg-dark hide" id="banner">
+      <div class="text-left text-light" id="topScores">
+        <p><a href="topscores.html">Top Scores</a></p>
+      </div>
+      
+      <div class="text-light text-center text-wrap" id="bannerTitle">
+        <h1>Robin Quiz</h1>
+      </div>
+      
+      <div class="text-right text-light" id="batmobile">
+        <p>To The Batmobile!</p>
+      </div>
+    </nav>
+
+
+    <div class="container text-center text-wrap" id="mainContainer">
+
+      <div class="container" id="currentHighscores">
+
+        <h3 id="highscoresTitle">Current High Scores</h3>
+
+      </div>
+
+      <div class="card rounded-10 bg-dark text-white" id="highscores">
+
+        <div class="card-body">
+          
+          <table class="table table-dark">
+
+            <thead id="tableHeader">
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Score</th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="storeScore">
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+
+      <div class="container" id="buttonGroup">
+        <a href="index.html" class="btn btn-outline-dark far fa-play-circle" role="button">  Play Again  </a>
+
+        <button type="button" class="btn btn-outline-danger fas fa-skull-crossbones" id="clear">  Clear Scores  </button>
+      </div>
+    </div>
+
+
+  </body>
+  </html>
