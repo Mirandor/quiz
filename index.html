@@ -24,54 +24,79 @@
 
   <body>
 
-    
-    <nav class="navbar bg-dark" id="banner">
+    <!-- Navigation -->
+    <nav class="navbar" id="banner">
+
+      <!-- Top Scores Link -->
       <div class="text-left text-light" id="topScores">
         <p><a href="topscores.html">Top Scores</a></p>
       </div>
-      
+
+      <!-- Quiz Title -->
       <div class="text-light text-center text-wrap" id="bannerTitle">
         <h1>Robin Quiz</h1>
       </div>
-      
+
+      <!-- Timer -->
       <div class="text-right text-light" id="timer">
         <p>Timer: <span id="seconds">0</span></p>
       </div>
+
     </nav>
 
     <br />
 
-    <div class="container-fluid text-center text-wrap">
+    <div class="container-fluid text-center text-wrap" id="quiz">
+
+      <!-- Welcome Section -->
       <div class="container-fluid" id="quizStart">
         <h2 id="startTitle">The Boy Wonder Quiz Challenge</h2>
 
-        <p id="startWelcome">Holy Guacamole! Can you get all these questions correct without any mistakes?</p>
+        <p id="startWelcome">Holy Guacamole, Batman! Can you get all these questions correct without any mistakes?</p>
 
-        <button type="button" class="btn btn-dark animate__pulse" id ="start">Na na na na na Batman!</button>
+        <!-- Start Quiz Button -->
+        <button class="btn animate__animated animate__pulse" id ="start">Na na na na na Batman!</button>
       </div>
 
+      <!-- Question Container -->
       <div class="container-fluid text-center text-wrap hide" id="quizQuestions">
-        <h4 class="animate__animated animate__backInUp" id="questionText"></h4>
 
-        <div class="btn-group-vertical buttons animate__animated animate__backInUp" id="choices"></div>
+        <h4 class="animate__animated animate__backInUp" id="question"></h4>
+
+        <div class="btn-group-vertical buttons animate__animated animate__backInUp" id="choices">
+
+          <button class="choices btn btn-secondary animate__animated animate__backOutLeft" id="btn0"><span id="choice0"></span></button>
+          <button class="choices btn btn-secondary animate__animated animate__backOutLeft" id="btn1"><span id="choice1"></span></button>
+          <button class="choices btn btn-secondary animate__animated animate__backOutLeft" id="btn2"><span id="choice2"></span></button>
+          <button class="choices btn btn-secondary animate__animated animate__backOutLeft" id="btn3"><span id="choice3"></span></button>
+
+        </div>
       </div>
 
-      <div class="container-fluid hide" id="gameOver">
-        <h2>Holy hole in a doughnut! You're done!</h2>
+      <!-- Game Over : Submit Score HTML -->
+      <div class="container hide" id="gameOver">
+        <div class="card">
+          <div class="card-body">
+            <h2>Holy hole in a doughnut!</h2>
 
-        <p id="myScore">Your score: 0</p>
+            <p id="myScore">Your score: 0</p>
+            <form>
+              <div class="form-group row">
+              <label class="my-1 mr-2" for="myName">Enter Name: </label>
 
-        <p>Enter your name: 
-          <input type="text" class="form-control" placeholder="Ex: Lux" id="myName" max="3"/>
+              <input type="text" class="form-control mb-2 mr-2" placeholder="Ex: Lux" id="myName" max="3" />
 
-          <button type="button" class="btn btn-dark" id ="submit">Because I'm BATMAN!</button>
-        </p>
+              <button type="button" class="btn btn-dark mb-2" id="submit">Because I'm BATMAN!</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
       <div class="container hide" id="answeredQuestions"></div>
 
     </div>
 
-
+  <script src="script.js"></script>
   </body>
   </html>

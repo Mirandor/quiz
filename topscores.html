@@ -23,7 +23,7 @@
     <title>High Scores | Riddle Me This</title>
 
   </head>
-
+ 
   <body>
 
     <nav class="navbar bg-dark hide" id="banner">
@@ -52,35 +52,10 @@
       <div class="card rounded-10 bg-dark text-white" id="highscores">
 
         <div class="card-body">
-          
-          <table class="table table-dark">
+          <ol id="scoreList">
 
-            <thead id="tableHeader">
-              <tr>
-                <th scope="col">Rank</th>
-                <th scope="col">Score</th>
-                <th scope="col">Name</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr id="storeScore">
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
+          </ol>
 
-          </table>
 
         </div>
       </div>
@@ -92,6 +67,7 @@
       </div>
     </div>
 
-
+  <script src="script.js"></script>
+  <script src="score.js"></script>
   </body>
   </html>

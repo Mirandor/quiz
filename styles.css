@@ -1,5 +1,7 @@
 body {
-  
+  /* background-color: #666062 */
+  background-color: #FDE976
+  /* background-color: #e6e6e6; */
 }
 
 a {
@@ -11,20 +13,28 @@ a:hover {
   color: #C7412A;
 }
 
-#banner {
-
+#start {
+  /* background-color: #931A12; */
+  background-color: #1B4338;
+  color: white;
 }
 
-#bannerTitle {
-
+#banner {
+  /* background-color: #1B4338; */
+  background-color: #931A12;
 }
 
 .hide {
   display: none;
 }
 
-#answeredQuestions {
+.card {
+  background-color: #FDE976;
+  border-color: #FDE976
+}
 
+#myName {
+  max-width: 25%;
 }
 
 /* high scores styles */
@@ -46,17 +56,13 @@ a:hover {
 
 #highscores {
   margin-top: 25px;
-  border: 3px solid #01A9E8;
-   /* #F4CF49; */
+  border: 3px solid #931A12;
   font-family: 'Press Start 2P', cursive;
 }
 
 #buttonGroup {
   margin-top: 20px;
 }
-
-
-
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -96,20 +102,5 @@ a:hover {
   #start {
     font-size: 16px;
   }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 
 }

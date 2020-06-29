@@ -16,7 +16,6 @@ LIVE LINK: https://mirandor.github.io/quiz/
 
 ### Features
 - Incorrect answers decrease the timer
-- Correct answers count towards end score
 - Scores are stored locally
 
 ## Questions & Feedback
